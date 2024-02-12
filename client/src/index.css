@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"); */
+
+:root {
+  /* Typography */
+  --family-poppins: "Poppins", sans-serif;
+  --black-text: #333333;
+}
+
+* {
+  color: var(--black-text);
+}
+
+body {
+  /* font-family: var(--family-poppins); */
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#root {
+  background: #f4f4f4;
+}
+
+input:is(:active, :focus, :focus-visible, :focus-within) {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
